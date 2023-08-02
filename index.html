@@ -4,51 +4,59 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC&family=Source+Sans+3:ital,wght@0,300;1,700&display=swap" rel="stylesheet">
   <title>Document</title>
 </head>
 <body>
   <div class="main-container">
-    <img src="images/alaskaPicture.jpg" alt="picture of a mountain" id="pictureOfAlaska">
-    
+    <div class="image-banner">
+      <div class="alaska">ALASKA</div>
+    </div>
 
     <div class="content">
       <h1>
         This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.
       </h1>    
       <p>You know you want to. </p>
-      <div class="main-form">
-        
-        <form action="" method="GET">
-          
-          
+      <form action="" method="">
+        <div class="main-form">       
           <h2>Let's do this!</h2>
           <div class="top-row">
             <div class="top-row-names">
               <label for="first-name">First Name</label>
-              <input type="text" name="first-name" id="first-name" placeholder="John">
+              <input type="text" name="first-name" id="first-name" placeholder="John" required>
             </div>
             <div class="top-row-names">
               <label for="last-name">Last Name</label>
-              <input type="text" name="last-name" id="last-name" placeholder="Doe">
+              <input type="text" name="last-name" id="last-name" placeholder="Doe" required>
             </div>
           </div>
           <div class="middle-row">
             <div class="email-number">
               <label for="email">Email</label>
-              <input type="email" name="email" id="email"></label>
+              <input type="email" name="email" id="email" placeholder="email@email.com" required>
             </div>
             <div class="email-number">
-              <label for="number">Password</label>
-              <input type="number" name="number" id="number">
+              <label for="number">Number</label>
+              <input type="tel" name="number" id="number" min="10" max="10" placeholder="888-888-8888" required>
             </div>
           </div>
           <div class="bottom-row">
-            div.
+            <div class="password-confirm">
+              <label for="password">Password</label>
+              <input type="password" name="password" id="password" required>
+            </div>
+            <div class="password-confirm">
+              <label for="confirm-password">Confirm Password</label>
+              <input type="password" name="password" id="confirm-password" required>
+            </div>
           </div>
-            
-          
-        </form>
-      </div>                        
+        </div>
+        <button type="submit" id="submit-button">Create Account</button>    
+      </form>
+      <span>Already have an account? Log in.</span>  
     </div>
     
     

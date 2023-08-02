@@ -1,6 +1,6 @@
 :root {
   --header-font-size: 1.5rem;
-  --header-width: 39.5%;
+  --header-width: 70%;
   --header-margin-left: 50px;
 }
 
@@ -11,22 +11,24 @@ body {
   background-color: rgb(249, 250, 251);
 }
 
-img {
-  height: 100vh;
-  vertical-align: top;
-  width: 50rem;
-}
+
 
 
 h1, h2, p {
   font-size: var(--header-font-size);
   width: var(--header-width);
   margin-left: var(--header-margin-left);
+  font-family: 'Alegreya Sans SC', sans-serif;
 }
 
 p {
   margin-bottom: 70px;
   font-weight: bold;
+}
+
+span {
+  margin: 40px 0 0 40px;
+  display: block;
 }
 
 fieldset {
@@ -46,24 +48,45 @@ input {
 
 input:focus {
   background-color: rgb(242, 251, 251);
-  box-shadow: 0 0 3px #1670BE;
-  outline: 3px solid rgb(137, 137, 240);
+  box-shadow: 0 0 3px #7fbef5;
+  outline: 3px solid rgb(156, 201, 246);
   box-sizing: border-box;
 }
 
+button {
+  margin: 40px 200px 0 50px;
+  background-color: #596D48;
+  border: none;
+  border-radius: 7px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
 
+  height: 45px;
+  width: 215px;
+  font-family: 'Source Sans 3', sans-serif;
+}
 
-.top-row-names {
+button:hover {
+  background-color: #678150;
+  box-shadow: 0 0 20px #678150;
+  font-size: 17px;
+}
+
+label {
+  font-family: 'Source Sans 3', sans-serif;
+}
+
+.top-row-names,
+.email-number,
+.password-confirm {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   margin-bottom: 30px;
+  
 }
 
-.email-number {
-  display: flex;
-  flex-direction: column;
-}
 
 .top-row,
 .middle-row,
@@ -71,10 +94,8 @@ input:focus {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  gap: 90px;
+  gap: 130px;
   margin-left: var(--header-margin-left);
-
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 .main-container {
@@ -87,15 +108,46 @@ input:focus {
 }
 
 .main-form {
-  width: 100%;
   background-color: rgb(255, 255, 255);
   border: 1px solid #fffdfd;
   box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
 }
 
+.alaska {
+  margin-top: 0;
+  padding: 0;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.373);
+  color: white;
+  width: 635px;
+  height: 150px;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  font-size: 38px;
+  
+  
+}
+
+.image-banner {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  object-fit: cover;
+  background-image: url("./images/alaskaPicture.jpg");
+  height: 100vh;
+  vertical-align: top;
+  width: 50rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 
-
-
-
-
+.invalid {
+  outline: 2px solid red;
+  background-color: rgb(246, 200, 200);
+}
