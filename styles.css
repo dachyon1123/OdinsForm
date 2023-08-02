@@ -4,9 +4,6 @@
   --header-margin-left: 50px;
 }
 
-*:focus {
-  outline: none;
-}
 
 body {
   margin: 0;
@@ -41,38 +38,43 @@ input {
   appearance: none;
   border-radius: 3px;
   height: 30px;
-  margin: 10px 0 0 0;
-  padding-left: 10px;
-}
-
-
-
-
-#top-row-fname input[type="text"],
-#top-row-lname input[type="text"] {
+  margin: 5px 0 0 0;
+  padding-left: 6px;
+  outline: none;
   border: 1px solid hwb(0 76% 24%);
 }
-
 
 input:focus {
   background-color: rgb(242, 251, 251);
   box-shadow: 0 0 3px #1670BE;
+  outline: 3px solid rgb(137, 137, 240);
+  box-sizing: border-box;
 }
 
 
-#top-row-fname,
-#top-row-lname {
+
+.top-row-names {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  margin-bottom: 30px;
 }
 
-#top-row {
+.email-number {
+  display: flex;
+  flex-direction: column;
+}
+
+.top-row,
+.middle-row,
+.bottom-row {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   gap: 90px;
   margin-left: var(--header-margin-left);
+
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .main-container {
@@ -87,7 +89,8 @@ input:focus {
 .main-form {
   width: 100%;
   background-color: rgb(255, 255, 255);
-  box-shadow: 3px;
+  border: 1px solid #fffdfd;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
 }
 
 
